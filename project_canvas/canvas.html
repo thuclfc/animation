@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="build/css/style1.css">
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    /*context.beginPath();
+    context.moveTo(170, 80);
+    context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+    context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+    context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+    context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+    context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+    context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+
+    // line color
+    context.closePath();
+    context.lineWidth=5;
+    context.fillStyle="#8ed6ff";
+    context.fill();
+    context.strokeStyle = 'blue';
+    context.stroke();*/
+
+   /*var rectWidth=150;
+   var rectHeight=75;
+   context.save();
+   //save state1
+    context.translate(canvas.width/2,canvas.height/2);
+    context.save();
+    // save state 2
+    context.rotate(Math.PI / 4);
+    context.save();
+    //save state 3
+    context.scale(2,2);
+    context.fillStyle = 'blue';
+    context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+
+    context.restore();
+    // restore state 3
+    context.fillStyle = 'red';
+    context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+    context.restore();
+    // restore state 2
+    context.fillStyle = 'yellow';
+    context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+
+    context.restore();
+    // restore state 1
+    context.fillStyle = 'green';
+    context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);*/
+
+/*
+    var centerX = 0;
+    var centerY = 0;
+    var radius = 50;
+
+    // save state
+    context.save();
+
+    // translate context
+    context.translate(canvas.width / 2, canvas.height / 2);
+
+    // scale context horizontally
+    context.scale(2, 1);
+    // draw circle which will be stretched into an oval
+    context.beginPath();
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+    context.restore();
+    // apply styling
+    context.fillStyle = '#8ED6FF';
+    context.fill();
+    context.lineWidth = 5;
+    context.strokeStyle = 'black';
+    context.stroke();*/
+
+
+    context.fillStyle = 'red';
+    context.shadowColor = '#000';
+    context.shadowBlur = 20;
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+    context.fillRect(188, 40, 200, 100);
+</script>
+</body>
+</html>

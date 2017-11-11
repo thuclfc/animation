@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="build/css/style1.css">
+</head>
+<body>
+<div class="box-img">
+    <img src="assets/images/nv1.png" alt="">
+    <img src="assets/images/nv2.png" alt="">
+    <img src="assets/images/nv3.png" alt="">
+    <img src="assets/images/nv4.png" alt="">
+    <img src="assets/images/nv5.png" alt="">
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+       var img_length=$('.box-img img').length;
+       var btn_item=0;
+
+          setInterval(function () {
+              if(btn_item>img_length){
+                  btn_item=0;
+              }
+              $('.box-img img').removeClass('active');
+              $('.box-img img:nth-child('+btn_item+')').addClass('active');
+              btn_item++;
+          },600);
+
+    });
+</script>
+</body>
+</html>

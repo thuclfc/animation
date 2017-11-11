@@ -1,0 +1,10 @@
+canvas {
+  border: 1px solid #000;
+  margin: 0; }
+
+.box-img img {
+  position: absolute;
+  display: none; }
+
+.box-img img.active {
+  display: block; }
